@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Edit <%= @flat.name %></h1>
+  <%= simple_form_for(@flat) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <%= f.input :price_per_night %>
+  <%= f.input :number_of_guests %>
+  <%= f.submit "Finish! 👌🏽", class: "btn btn-outline-secondary" %> <%= link_to "Nevermind, Go 🔙 to All Flats", flats_path %>
+  <% end %>
+
+</div>

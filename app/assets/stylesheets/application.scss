@@ -1,0 +1,87 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.container.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+h1 {
+  margin-top: 15px;
+}
+
+div.banner {
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  margin-top: 140px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 50px;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.full-container {
+  position: relative;
+}
+
+.content-container {
+    position: absolute;
+    top: -70px;
+      display: flex;
+}
+
+.content-container .card {
+  margin: 12px 0px;
+}
+
+.share {
+  display: flex;
+  justify-content: space-between;
+}
+
+.share i {
+  font-size: 30px;
+}
+
+.left-container {
+  margin: 0px 20px;
+      width: 44rem;
+
+}
+
+.right-container {
+  margin: 0px 20px;
+}
